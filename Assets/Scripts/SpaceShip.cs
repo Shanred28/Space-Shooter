@@ -58,7 +58,6 @@ namespace SpaceShooter
 
             m_Rigid = GetComponent<Rigidbody2D>();
             m_Rigid.mass = m_Mass;
-
             m_Rigid.inertia = 1;
         }
 
