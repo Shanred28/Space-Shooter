@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace SpaceShooter
 {
@@ -11,7 +13,7 @@ namespace SpaceShooter
         /// <summary>
         /// Object ignores damage.
         /// </summary>
-        [SerializeField] private bool m_Indestructible;
+        [SerializeField] protected bool m_Indestructible;
         public bool IsIndestructible => m_Indestructible;
 
         /// <summary>
@@ -54,10 +56,35 @@ namespace SpaceShooter
         /// Overriding the object destruction event if the hitpoint is below zero.
         /// </summary>
         protected virtual void OnDeath()
-        {
+        {          
+            m_EventOnDeath?.Invoke();
             Destroy(gameObject);
         }
         #endregion
+
+        private static HashSet<Destructible> m_AllDestructibles;
+        public static IReadOnlyCollection<Destructible> AllDestructibles => m_AllDestructibles;
+
+        protected virtual void OnEnable()
+        { 
+            if(m_AllDestructibles == null)
+               m_AllDestructibles = new HashSet<Destructible>();
+
+            m_AllDestructibles.Add(this);
+        }
+
+        protected virtual void OnDestroy()
+        { 
+            m_AllDestructibles.Remove(this);
+        }
+
+        public const int TeamIdNeutral = 0;
+
+        [SerializeField] private int m_TeamId;
+        public int TeamId => m_TeamId;
+
+        [SerializeField] private UnityEvent m_EventOnDeath;
+        public UnityEvent EventOnDeath => m_EventOnDeath;
     }
 }
 
