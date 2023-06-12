@@ -1,0 +1,344 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: turret
+    m_Hash: 165838629
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_0
+      m_Hash: 56411839
+      m_Sprite: {fileID: -282221157, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -282221157, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_1
+      m_Hash: 878442025
+      m_Sprite: {fileID: 1339952650, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1339952650, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_2
+      m_Hash: 760391571
+      m_Sprite: {fileID: 682083747, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 682083747, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_3
+      m_Hash: 441816837
+      m_Sprite: {fileID: 1571479560, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1571479560, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_4
+      m_Hash: 70320806
+      m_Sprite: {fileID: -892628795, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -892628795, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_5
+      m_Hash: 859189808
+      m_Sprite: {fileID: 989871176, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 989871176, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_6
+      m_Hash: 708797322
+      m_Sprite: {fileID: -1594398438, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1594398438, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_7
+      m_Hash: 490230556
+      m_Sprite: {fileID: -943454854, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -943454854, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_8
+      m_Hash: 226971277
+      m_Sprite: {fileID: -523620819, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -523620819, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_9
+      m_Hash: 981499419
+      m_Sprite: {fileID: 519595644, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 519595644, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_10
+      m_Hash: 916266171
+      m_Sprite: {fileID: -824979641, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -824979641, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_11
+      m_Hash: 26881069
+      m_Sprite: {fileID: 677171708, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 677171708, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_12
+      m_Hash: 412319127
+      m_Sprite: {fileID: 141214686, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 141214686, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_13
+      m_Hash: 798248193
+      m_Sprite: {fileID: -981515582, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -981515582, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_14
+      m_Hash: 837867682
+      m_Sprite: {fileID: 1995111236, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1995111236, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_15
+      m_Hash: 116910132
+      m_Sprite: {fileID: 913819232, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 913819232, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_16
+      m_Hash: 536787342
+      m_Sprite: {fileID: -1632355889, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1632355889, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_17
+      m_Hash: 687442200
+      m_Sprite: {fileID: 402323845, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 402323845, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_18
+      m_Hash: 944149641
+      m_Sprite: {fileID: -1133277732, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1133277732, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_19
+      m_Hash: 255960095
+      m_Sprite: {fileID: -2126249395, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2126249395, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_20
+      m_Hash: 498093944
+      m_Sprite: {fileID: 77426215, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 77426215, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_21
+      m_Hash: 716668910
+      m_Sprite: {fileID: 217543130, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 217543130, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_22
+      m_Hash: 868101716
+      m_Sprite: {fileID: 655050774, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 655050774, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_23
+      m_Hash: 79240898
+      m_Sprite: {fileID: 573497255, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 573497255, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_24
+      m_Hash: 450726753
+      m_Sprite: {fileID: -2086750851, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2086750851, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_25
+      m_Hash: 769309687
+      m_Sprite: {fileID: -1205273587, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1205273587, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_26
+      m_Hash: 886303309
+      m_Sprite: {fileID: -1408863663, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1408863663, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_27
+      m_Hash: 64281307
+      m_Sprite: {fileID: -899224879, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -899224879, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_28
+      m_Hash: 325830474
+      m_Sprite: {fileID: 401215968, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 401215968, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_29
+      m_Hash: 611121116
+      m_Sprite: {fileID: 545749464, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 545749464, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_30
+      m_Hash: 78347833
+      m_Sprite: {fileID: 1678729432, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1678729432, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_31
+      m_Hash: 866930351
+      m_Sprite: {fileID: -2064458255, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2064458255, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_32
+      m_Hash: 715464469
+      m_Sprite: {fileID: 824161062, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 824161062, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_33
+      m_Hash: 497168259
+      m_Sprite: {fileID: -603166363, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -603166363, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_34
+      m_Hash: 63355424
+      m_Sprite: {fileID: -693208838, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -693208838, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_35
+      m_Hash: 885099190
+      m_Sprite: {fileID: -1671227992, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1671227992, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_36
+      m_Hash: 768137996
+      m_Sprite: {fileID: -372778060, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -372778060, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_37
+      m_Hash: 449833882
+      m_Sprite: {fileID: -975824289, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -975824289, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_38
+      m_Hash: 175175179
+      m_Sprite: {fileID: 306102850, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 306102850, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_39
+      m_Hash: 1031259805
+      m_Sprite: {fileID: -1075527796, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1075527796, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_40
+      m_Hash: 199944446
+      m_Sprite: {fileID: 496845776, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 496845776, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_41
+      m_Hash: 1022220392
+      m_Sprite: {fileID: -190807904, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -190807904, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_42
+      m_Hash: 635734482
+      m_Sprite: {fileID: 302708937, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 302708937, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_43
+      m_Hash: 316913988
+      m_Sprite: {fileID: -1520845343, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1520845343, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_44
+      m_Hash: 210185447
+      m_Sprite: {fileID: 566327331, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 566327331, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_45
+      m_Hash: 998251633
+      m_Sprite: {fileID: 723337476, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 723337476, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_46
+      m_Hash: 579423691
+      m_Sprite: {fileID: -1946025110, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1946025110, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_47
+      m_Hash: 361659741
+      m_Sprite: {fileID: -525133491, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -525133491, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_48
+      m_Hash: 87122124
+      m_Sprite: {fileID: 2087158538, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2087158538, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_49
+      m_Hash: 842420314
+      m_Sprite: {fileID: 1217377730, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1217377730, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_50
+      m_Hash: 317839807
+      m_Sprite: {fileID: 1437532236, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1437532236, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_51
+      m_Hash: 636938537
+      m_Sprite: {fileID: -564397233, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -564397233, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_52
+      m_Hash: 1023391891
+      m_Sprite: {fileID: 1386208453, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1386208453, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_53
+      m_Hash: 200837125
+      m_Sprite: {fileID: 461340070, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 461340070, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_54
+      m_Hash: 362552742
+      m_Sprite: {fileID: 1079431703, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1079431703, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_55
+      m_Hash: 580594992
+      m_Sprite: {fileID: -122753318, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -122753318, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_56
+      m_Hash: 999455882
+      m_Sprite: {fileID: -632054115, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -632054115, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_57
+      m_Hash: 211110940
+      m_Sprite: {fileID: -1307298236, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1307298236, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_58
+      m_Hash: 472535437
+      m_Sprite: {fileID: 1531777439, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1531777439, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_59
+      m_Hash: 724394267
+      m_Sprite: {fileID: -237019372, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -237019372, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_60
+      m_Hash: 970754684
+      m_Sprite: {fileID: -186882809, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -186882809, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_61
+      m_Hash: 249281258
+      m_Sprite: {fileID: -292174757, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -292174757, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_62
+      m_Hash: 399698768
+      m_Sprite: {fileID: -1604681608, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1604681608, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    - m_Name: 1669989173_66-pibig-info-p-spraiti-vid-sverkhu-pinterest-69_63
+      m_Hash: 550886342
+      m_Sprite: {fileID: 1449734865, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1449734865, guid: 72b94c3f0531a8441a73fffe20c2071b, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 64
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 638206387427027566
+  m_Version: 1

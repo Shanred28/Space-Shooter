@@ -38,7 +38,7 @@ namespace SpaceShooter
         [SerializeField] private bool IsActvePatrolRoute;
 
         private Vector3 m_MovePatrolPoint;
-        private bool IsRotePatrol = false;
+        private bool IsRoutePatrol = false;
 
         private void Start()
         {
@@ -51,10 +51,6 @@ namespace SpaceShooter
             UpdateTimers();
             UpdateAI();
 
-        }
-        private void FixedUpdate()
-        {
-            
         }
 
         private void UpdateAI()
@@ -102,16 +98,15 @@ namespace SpaceShooter
                             }
                             if ( IsActvePatrolRoute == true)
                             {
-                                if (IsRotePatrol == false)
+                                if (IsRoutePatrol == false)
                                 {
                                     m_MovePatrolPoint = FindNearesTargetMovePointPatrol().position;
                                     m_MovePosition = m_MovePatrolPoint;
-                                    IsRotePatrol = true;
+                                    IsRoutePatrol = true;
 
                                 }
-                                if (IsRotePatrol == true && IsRaiusPoint(m_MovePatrolPoint, m_PointPatrol.RadiusPointPatrol))
+                                if (IsRoutePatrol == true && IsRaiusPoint(m_MovePatrolPoint, m_PointPatrol.RadiusPointPatrol))
                                 {
-                                    Debug.Log("Мы у точки");
                                     for (int i = 0; i < m_PointPatrol.PointPatrolRoute.Count; ++i)
                                     {
                                         int nextTransform = i + 1;
@@ -166,50 +161,21 @@ namespace SpaceShooter
         private float tempSpeed = 0.4f;
         private void ActionEvadeCollision()
         {
-          /*  Collider2D[] collider2 = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y) , 5f);
-             foreach (Collider2D collider in collider2)
-             { 
-                 float dis = (collider.transform.position - transform.position).magnitude;
-                 if (dis < 3 && dis != 0)
-                 {
-                    
-                     m_MovePosition = transform.position + transform.right;
-                 }
-             }*/
-          /*  var ahead = transform.position.y + m_Navigationlinear * m_EvadeRayLength;
-            var ahead2 = transform.position.y + m_Navigationlinear * m_EvadeRayLength * 0.5f;
-            var distance = Vector2.Distance(new Vector2(transform.position.x, ahead2), new Vector2(transform.position.x, ahead));
-            Collider2D col = Physics2D.Raycast(transform.position, transform.up, m_EvadeRayLength).collider;
-            var Surfacepoint = Physics2D.Raycast(transform.position, transform.up, m_EvadeRayLength).point;
-            var m_ColCentr = col.bounds.center;
-            var RadiusObstecle = Vector3.Distance( new Vector3(Surfacepoint.x, Surfacepoint.y, 0), m_ColCentr);
-            bool intRadius = Vector3.Distance(m_ColCentr, new Vector3(transform.position.x, ahead, 0)) <= RadiusObstecle || Vector3.Distance(m_ColCentr, new Vector3(transform.position.x, ahead2, 0)) <= RadiusObstecle;
-
-            var Surfacepoint = Physics2D.Raycast(transform.position, transform.up, m_EvadeRayLength).point;*/
             if (Physics2D.Raycast(transform.position, transform.up, m_EvadeRayLength) == true)
             {
 
                 if (tempSpeed == 0.0f)
                     tempSpeed = m_Navigationlinear;
 
-               /* m_Navigationlinear = m_Navigationlinear * -0.9f;
-                m_MovePosition = transform.position + transform.right *100;*/
                 StartCoroutine(WaitTimerInvulnerability(1));
-                IsRotePatrol = false;
+                IsRoutePatrol = false;
 
-                //m_MovePosition = transform.position + transform.right * offset;
             }
-         /*   else if(tempSpeed != 0)
-            {
-                m_Navigationlinear = tempSpeed;
-                tempSpeed = 0.0f;
-            }              */
         }
 
         IEnumerator WaitTimerInvulnerability(float timer)
         {
             m_Navigationlinear = m_Navigationlinear * -1f;
-           // m_MovePosition = transform.position + transform.right; 
             yield return new WaitForSeconds(timer);
             m_Navigationlinear = tempSpeed;
 

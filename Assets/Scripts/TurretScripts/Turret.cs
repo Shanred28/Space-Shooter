@@ -15,6 +15,8 @@ namespace SpaceShooter
 
         private SpaceShip m_Ship;
 
+        [SerializeField] private AudioSource m_AudioSource;
+
         #region Unity Event 
         private void Start()
         {
@@ -49,8 +51,8 @@ namespace SpaceShooter
 
             m_RefireTimer = m_TurretProperties.RateOfFire;
 
-            ///SFX
-        
+            m_AudioSource.PlayOneShot(m_TurretProperties.LaunchSFX);
+            
         }
 
         public void AssignLoadout(TurretProperties props)

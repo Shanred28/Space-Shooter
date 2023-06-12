@@ -27,11 +27,16 @@ namespace SpaceShooter
         /// Maximum linear speed.
         /// </summary>
         [SerializeField] private float m_MaxLinearVelocity;
+        public float MaxLinearVelocity => m_MaxLinearVelocity;
 
         /// <summary>
         /// Maximum rotation speed. In Degrees/Seconds.
         /// </summary>
         [SerializeField] private float m_MaxAngularVelocity;
+        public float MaxAngularVelocity => m_MaxAngularVelocity;
+
+        [SerializeField] private Sprite m_PreviewImage;
+        public Sprite PreviewImage => m_PreviewImage;
 
         /// <summary>
         /// Reference to Rigidbody2D.
@@ -97,32 +102,35 @@ namespace SpaceShooter
         }
 
         [SerializeField] private int m_MaxEnergy;
+        public int MaxEnergy => m_MaxEnergy;
         [SerializeField] private int m_MaxAmmo;
         [SerializeField] private int m_EnergyRegenPerSecond;
 
-        private float m_PrimeryEnergy;
-        private int m_SecondaryAmmo;
+        private float m_CurrentEnergy;
+        public float CurrentEnergy => m_CurrentEnergy;
+        private int m_CurrentAmmo;
+        public int CurrentAmmo => m_CurrentAmmo;
 
         public void AddEnergy(int e)
         {
-            m_PrimeryEnergy = Mathf.Clamp(m_PrimeryEnergy + e, 0, m_MaxEnergy);        
+            m_CurrentEnergy = Mathf.Clamp(m_CurrentEnergy + e, 0, m_MaxEnergy);        
         }
 
         public void AddAmmo(int ammo)
         {
-            m_SecondaryAmmo = Mathf.Clamp(m_SecondaryAmmo + ammo, 0, m_MaxAmmo);
+            m_CurrentAmmo = Mathf.Clamp(m_CurrentAmmo + ammo, 0, m_MaxAmmo);
         }
 
         private void InitOffensive()
         {
-            m_PrimeryEnergy = m_MaxEnergy;
-            m_SecondaryAmmo = m_MaxAmmo;
+            m_CurrentEnergy = m_MaxEnergy;
+            m_CurrentAmmo = m_MaxAmmo;
         }
 
         private void UpdateEnergyRegen()
         {
-            m_PrimeryEnergy += (float)m_EnergyRegenPerSecond * Time.deltaTime;
-            m_PrimeryEnergy = Mathf.Clamp(m_PrimeryEnergy, 0, m_MaxEnergy);
+            m_CurrentEnergy += (float)m_EnergyRegenPerSecond * Time.deltaTime;
+            m_CurrentEnergy = Mathf.Clamp(m_CurrentEnergy, 0, m_MaxEnergy);
         }
 
         public bool DrawEnergy(int count)
@@ -130,9 +138,9 @@ namespace SpaceShooter
             if (count == 0)
                 return true;
 
-            if (m_PrimeryEnergy >= count)
+            if (m_CurrentEnergy >= count)
             {
-                m_PrimeryEnergy -= count;
+                m_CurrentEnergy -= count;
                 return true;
             }
             return false;
@@ -143,9 +151,9 @@ namespace SpaceShooter
             if (count == 0)
                 return true;
 
-            if (m_SecondaryAmmo >= count)
+            if (m_CurrentAmmo >= count)
             { 
-                m_SecondaryAmmo -= count;
+                m_CurrentAmmo -= count;
                 return true;
             }
             return false;

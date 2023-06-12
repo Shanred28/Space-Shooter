@@ -97,10 +97,10 @@ namespace SpaceShooter
             Vector2 directTarget = (Vector2)target.transform.position - (Vector2)transform.position;
             directTarget = directTarget.normalized;
 
-            float rotateeAmount = Vector3.Cross (directTarget, transform.up).z;
+            float rotateAmount = Vector3.Cross (directTarget, transform.up).z;
 
             Rigidbody2D rb = GetComponent<Rigidbody2D>();
-            rb.angularVelocity = -rotateeAmount * rotateSpeed;
+            rb.angularVelocity = -rotateAmount * rotateSpeed;
 
             rb.velocity = transform.up * speed;
         }

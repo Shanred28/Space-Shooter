@@ -25,6 +25,8 @@ namespace SpaceShooter
         /// Current hitpoints.
         /// </summary>
         private int m_CurrentHitPoints;
+        public int CurrentHitPoints => m_CurrentHitPoints;
+
         public int HitPoints => m_HitPoints;
         #endregion
 
@@ -36,6 +38,8 @@ namespace SpaceShooter
         #endregion
 
         #region Public API
+
+        public UnityEvent ChangeHp;
         /// <summary>
         /// Applying damage to an object.
         /// </summary>
@@ -45,7 +49,7 @@ namespace SpaceShooter
             if (m_Indestructible) return;
 
             m_CurrentHitPoints -= damage;
-
+            ChangeHp.Invoke();
             if (m_CurrentHitPoints <= 0)
                 OnDeath();
         }
@@ -56,7 +60,7 @@ namespace SpaceShooter
         /// Overriding the object destruction event if the hitpoint is below zero.
         /// </summary>
         protected virtual void OnDeath()
-        {          
+        {
             m_EventOnDeath?.Invoke();
             Destroy(gameObject);
         }
@@ -66,15 +70,15 @@ namespace SpaceShooter
         public static IReadOnlyCollection<Destructible> AllDestructibles => m_AllDestructibles;
 
         protected virtual void OnEnable()
-        { 
-            if(m_AllDestructibles == null)
-               m_AllDestructibles = new HashSet<Destructible>();
+        {
+            if (m_AllDestructibles == null)
+                m_AllDestructibles = new HashSet<Destructible>();
 
             m_AllDestructibles.Add(this);
         }
 
         protected virtual void OnDestroy()
-        { 
+        {
             m_AllDestructibles.Remove(this);
         }
 
@@ -85,6 +89,12 @@ namespace SpaceShooter
 
         [SerializeField] private UnityEvent m_EventOnDeath;
         public UnityEvent EventOnDeath => m_EventOnDeath;
+
+        #region Score
+        [SerializeField] private int m_ScoreValue;
+        public int ScoreValue => m_ScoreValue;
+
+        #endregion
     }
 }
 

@@ -28,9 +28,21 @@ namespace SpaceShooter
                 if (dest != null && dest != m_Perent)
                 { 
                     dest.ApplyDamage(m_Damage);
+
                     var boom = Instantiate(m_ImpactEffectPrefab);
                     boom.transform.position = this.transform.position;
+
+                    if (IsProjectile)
+                    {
+                        Player.Instance.AddScore(dest.ScoreValue);
+
+                        if (hit.collider.transform.root.TryGetComponent<SpaceShip>(out var ship) && (dest.CurrentHitPoints <= m_Damage))
+                        {
+                            Player.Instance.AddKill();
+                        }
+                    }                      
                 }
+
                 OnProjectileLifeEnd(hit.collider, hit.point);
             }
 
@@ -47,9 +59,13 @@ namespace SpaceShooter
         }
 
         private Destructible m_Perent;
+        private bool IsProjectile =false;
         public void SetPerentShooter(Destructible perent)
         {
             m_Perent = perent;
+
+            if(m_Perent == Player.Instance.ActiveShip)
+                IsProjectile = true;
         }
     }
 }
