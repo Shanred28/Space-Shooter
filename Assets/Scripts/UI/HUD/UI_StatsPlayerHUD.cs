@@ -21,7 +21,7 @@ namespace SpaceShooter
         private void Update()
         {
             m_ImageFilledHp.fillAmount = (float)Player.Instance.ActiveShip.CurrentHitPoints / (float)Player.Instance.ActiveShip.HitPoints;
-            m_TextHP.text = Player.Instance.ActiveShip.HitPoints.ToString() + " / " + Player.Instance.ActiveShip.CurrentHitPoints.ToString();
+            m_TextHP.text = Player.Instance.ActiveShip.CurrentHitPoints.ToString()  + " / " + Player.Instance.ActiveShip.HitPoints.ToString();
 
             m_ImageFilledEnergy.fillAmount = (float)Player.Instance.ActiveShip.CurrentEnergy / (float)Player.Instance.ActiveShip.MaxEnergy;
 

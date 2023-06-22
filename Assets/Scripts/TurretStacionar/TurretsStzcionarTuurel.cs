@@ -40,13 +40,11 @@ namespace SpaceShooter
             if (m_RefireTimer > 0) return;
 
             Debug.Log(m_TurretProperties.EnergyUsage);
-            //if (m_Turret.DrawEnergy(m_TurretProperties.EnergyUsage) == false) return;
+           // if (m_Turret.DrawEnergy(m_TurretProperties.EnergyUsage) == false) return;
 
-            Debug.Log("ѕытаюсь создать снар€д3");
 
-            if (m_Turret.DrawAmmo(m_TurretProperties.AmmoUsage) == false) return;
+ //           if (m_Turret.DrawAmmo(m_TurretProperties.AmmoUsage) == false) return;
 
-            Debug.Log("ѕытаюсь создать снар€д!!!!!");
             Projectile projectile = Instantiate(m_TurretProperties.ProjectilePrefab).GetComponent<Projectile>();
             projectile.transform.position = transform.position;
             projectile.transform.up = transform.up;

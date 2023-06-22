@@ -36,7 +36,7 @@ Transform:
   - {fileID: 577064300219705814}
   - {fileID: 8002540482101399497}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1209783375688104968
 GameObject:
@@ -1473,7 +1473,7 @@ MonoBehaviour:
   m_EventLevelCompleted:
     m_PersistentCalls:
       m_Calls: []
-  m_TimeBonusScore: 20
+  m_TimeBonusScore: 2000
 --- !u!1 &4607410020011502177
 GameObject:
   m_ObjectHideFlags: 0
