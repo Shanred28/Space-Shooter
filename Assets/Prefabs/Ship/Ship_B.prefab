@@ -227,7 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Nicname: Ship B
   m_Indestructible: 0
-  m_HitPoints: 100
+  m_HitPoints: 800
   ChangeHp:
     m_PersistentCalls:
       m_Calls: []
@@ -237,10 +237,10 @@ MonoBehaviour:
       m_Calls: []
   m_ScoreValue: 0
   m_Mass: 1
-  m_Thrust: 1000
-  m_Mobility: 2000
-  m_MaxLinearVelocity: 15
-  m_MaxAngularVelocity: 360
+  m_Thrust: 800
+  m_Mobility: 1600
+  m_MaxLinearVelocity: 10
+  m_MaxAngularVelocity: 200
   m_PreviewImage: {fileID: 21300000, guid: 816c6ca2c5383624d80387ef9830505d, type: 3}
   m_Turrets:
   - {fileID: 1955203763250146761}
@@ -249,7 +249,7 @@ MonoBehaviour:
   - {fileID: 6595221281590601343}
   - {fileID: 6305211588249920285}
   m_MaxEnergy: 100
-  m_MaxAmmo: 1000
+  m_MaxAmmo: 200
   m_EnergyRegenPerSecond: 1
   visualModelSheld: {fileID: 7287571489634157394}
 --- !u!114 &8342819112727751224

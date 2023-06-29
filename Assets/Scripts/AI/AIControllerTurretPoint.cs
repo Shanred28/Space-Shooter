@@ -112,24 +112,7 @@ namespace SpaceShooter
             return angle;
         }
 
-        private void RotateTranform()
-        {
-            if (m_SelectedTarget != null)
-            {
-                float angle = MakeLead();
-               // m_TransformTurrel.Rotate(m_SelectedTarget.transform.position, m_SelectedTarget.transform.rotation.z);
-               // m_TransformTurrel.Rotate(m_SelectedTarget.transform.position, angle, Space.Self);
-               // m_TransformTurrel.localRotation = Quaternion.RotateTowards(m_TransformTurrel.localRotation, Quaternion.Euler(0,0, angle), 10 * Time.deltaTime);
-                Vector2 directTarget = (Vector2)m_SelectedTarget.transform.position - (Vector2)transform.position;
-               /* directTarget = directTarget.normalized;
-                float rotateAmount = Vector3.Cross(directTarget, transform.up).z;
-                m_TransformTurrel.transform. (new Vector3(0,0, rotateAmount));*/
-                Vector3 newDirection = Vector3.RotateTowards(transform.forward, m_SelectedTarget.transform.position, 10f, 0.0f);
-
-            }
-           
-        }
-
+      
         private void ActionFire()
         {
             if (m_SelectedTarget != null)
@@ -142,8 +125,7 @@ namespace SpaceShooter
 
                     if (m_FireTimer.IsFinished == true)
                     {
-                        Debug.Log("передаю навод");
-                        m_TurretPoint.Fire(TurretMode.Primary);
+                        m_TurretPoint.Fire(TurretMode.Secondary);
                         m_FireTimer.Restart();
                     }
                     

@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfa109a5caf5c7f41bc81a31f58077a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mode: 0
-  m_TurretProperties: {fileID: 11400000, guid: e7bd2aadde58d44439b303b5951154a7, type: 2}
+  m_Mode: 2
+  m_TurretProperties: {fileID: 11400000, guid: 346e953d9afecea4fa8c11dd2fca8e2d, type: 2}
   m_AudioSource: {fileID: 1582634878575959765}
 --- !u!82 &1582634878575959765
 AudioSource:
@@ -181,7 +181,7 @@ Transform:
   m_Children:
   - {fileID: 1828953769397517230}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7155496038903906221
 MonoBehaviour:
@@ -498,7 +498,7 @@ MonoBehaviour:
   m_ShootDelay: 1.4
   m_AttackRange: 30
   m_TransformTurrel: {fileID: 1828953769397517230}
-  Bulet: {fileID: 1142739676845948877, guid: 41ed5d590ea21c443a2173836cdef20f, type: 3}
+  Bulet: {fileID: -4983389458342136591, guid: 9dbd6fbd5656f144a9e135677d7e00c6, type: 3}
 --- !u!114 &5814641195744780448
 MonoBehaviour:
   m_ObjectHideFlags: 0

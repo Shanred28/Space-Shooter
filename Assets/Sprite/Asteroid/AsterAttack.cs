@@ -7,7 +7,8 @@ using UnityEngine;
 public class AsterAttack : MonoBehaviour
 {
     [SerializeField] private float m_RadiusAttackAster;
-    [SerializeField] private float timerDestroy;
+    [SerializeField] private float m_timerDestroy;
+    [SerializeField] private ImpactEffect m_impactEffect;
 
     private Vector3 m_Target;
     private Vector3 m_VectorMove;
@@ -32,7 +33,7 @@ public class AsterAttack : MonoBehaviour
         {
             timer += Time.deltaTime;
             transform.position +=  m_VectorMove * Time.deltaTime;    
-            if(timer > timerDestroy)
+            if(timer > m_timerDestroy)
                 Destroy(gameObject);
         }
     }
@@ -46,6 +47,8 @@ public class AsterAttack : MonoBehaviour
         var destructable = collision.transform.root.GetComponent<Destructible>();
         if (destructable != null)
         {
+            var boom = Instantiate(m_impactEffect);
+            boom.transform.position = this.transform.position;
             Destroy(gameObject);
         }
     }

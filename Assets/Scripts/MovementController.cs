@@ -19,6 +19,7 @@ namespace SpaceShooter
 
         [SerializeField] private PointerClickHold m_MobileFirePrimary;
         [SerializeField] private PointerClickHold m_MobileFireSecondary;
+        [SerializeField] private PointerClickHold m_MobileFireAlt;
 
         private void Start()
         {
@@ -27,6 +28,7 @@ namespace SpaceShooter
                 m_MobileJoystick.gameObject.SetActive(false);
                 m_MobileFirePrimary.gameObject.SetActive(false);
                 m_MobileFireSecondary.gameObject.SetActive(false);
+                m_MobileFireAlt.gameObject.SetActive(false);
             }
 
             else
@@ -34,6 +36,7 @@ namespace SpaceShooter
                 m_MobileJoystick.gameObject.SetActive(true);
                 m_MobileFirePrimary.gameObject.SetActive(true);
                 m_MobileFireSecondary.gameObject.SetActive(true);
+                m_MobileFireAlt.gameObject.SetActive(true);
             }               
         }
 
@@ -69,6 +72,9 @@ namespace SpaceShooter
                 m_TargetShip.Fire(TurretMode.Primary);
 
             if (m_MobileFireSecondary.IsHold == true)
+                m_TargetShip.Fire(TurretMode.PrimaryDouble);   
+            
+            if (m_MobileFireAlt.IsHold == true)
                 m_TargetShip.Fire(TurretMode.Secondary);
         }
 

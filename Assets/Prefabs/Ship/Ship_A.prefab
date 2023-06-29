@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Thrust: 1000
   m_Mobility: 2000
   m_MaxLinearVelocity: 15
-  m_MaxAngularVelocity: 360
+  m_MaxAngularVelocity: 300
   m_PreviewImage: {fileID: 21300000, guid: 5d62dae19aca96e479915b585b4e556e, type: 3}
   m_Turrets:
   - {fileID: 565961298199291767}
@@ -393,8 +393,8 @@ MonoBehaviour:
   - {fileID: 1878925580921894267}
   - {fileID: 2959608838626819637}
   m_MaxEnergy: 100
-  m_MaxAmmo: 1000
-  m_EnergyRegenPerSecond: 1
+  m_MaxAmmo: 100
+  m_EnergyRegenPerSecond: 2
   visualModelSheld: {fileID: 4964279634104152043}
 --- !u!114 &4161417498168196042
 MonoBehaviour:
