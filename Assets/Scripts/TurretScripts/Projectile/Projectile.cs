@@ -22,6 +22,7 @@ namespace SpaceShooter
 
             RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, stepLenght);
 
+            
             if (hit)
             { 
                 Destructible dest = hit.collider.transform.root.GetComponent<Destructible>();
@@ -36,9 +37,17 @@ namespace SpaceShooter
                     {
                         Player.Instance.AddScore(dest.ScoreValue);
 
-                        if (hit.collider.transform.root.TryGetComponent<SpaceShip>(out var ship) && (dest.CurrentHitPoints <= m_Damage))
+                        // Ѕез этих условий, если два projectile попадает в один корабль засчитываетс€ два килла. — этим правилом все работает.
+                        if (hit.collider.transform.root.TryGetComponent<SpaceShip>(out var ship) && dest.CurrentHitPoints <= m_Damage  )
                         {
-                            Player.Instance.AddKill();
+                            if(!ship.IsDestroy)
+                                Player.Instance.AddKill();                           
+                        }
+
+                        if (hit.collider.transform.root.TryGetComponent<TurretPoint>(out var turretPoint) && dest.CurrentHitPoints <= m_Damage)
+                        {
+                            if (!turretPoint.IsDestroy)
+                                Player.Instance.AddKill();
                         }
                     }                      
                 }

@@ -57,7 +57,7 @@ namespace SpaceShooter
 
         private void CalculateLevelStatistic()
         {
-            float timeBonus = LevelController.Instance.TimeBonusScore;
+            float timeBonus = LevelController.Instance.RefereenceTime;
             if (LevelController.Instance.LevelTime < timeBonus)
             {
                 LevelStatistics.score = Player.Instance.Score * 2;

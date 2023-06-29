@@ -61,7 +61,7 @@ namespace SpaceShooter
 
         public void AddKill()
         {
-            ++NumKills;
+            NumKills++;
         }
 
         public void AddScore(int num)

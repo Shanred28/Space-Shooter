@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -59,9 +60,11 @@ namespace SpaceShooter
         /// <summary>
         /// Overriding the object destruction event if the hitpoint is below zero.
         /// </summary>
+        public bool  IsDestroy = false;
         protected virtual void OnDeath()
         {
             m_EventOnDeath?.Invoke();
+            IsDestroy = true;
             Destroy(gameObject);
         }
         #endregion
