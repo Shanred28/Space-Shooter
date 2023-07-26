@@ -60,7 +60,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.541
+  m_Volume: 0.312
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -181,7 +181,7 @@ Transform:
   m_Children:
   - {fileID: 1828953769397517230}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7155496038903906221
 MonoBehaviour:
@@ -517,6 +517,7 @@ MonoBehaviour:
   ChangeHp:
     m_PersistentCalls:
       m_Calls: []
+  IsDestroy: 0
   m_TeamId: 1
   m_EventOnDeath:
     m_PersistentCalls:

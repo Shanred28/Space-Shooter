@@ -6,7 +6,7 @@ namespace SpaceShooter
     {
 
         private SpaceShip mainTarget;
-        [SerializeField ]private float speed;
+        [SerializeField] private float speed;
         [SerializeField] private float m_RadisuTarget;
 
         private Destructible secondTarget;
@@ -17,12 +17,12 @@ namespace SpaceShooter
         /// </summary>
         protected override void Update()
         {
-            
+
             if (mainTarget == null || secondTarget == null)
             {
                 Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, m_RadisuTarget);
                 SearchTargetCollider(colliders);
-            }          
+            }
         }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace SpaceShooter
             {
                 mainTarget.ApplyDamage(m_Damage);
                 var boom = Instantiate(m_ImpactEffectPrefab);
-                    boom.transform.position = this.transform.position ;
+                boom.transform.position = this.transform.position;
                 Destroy(gameObject);
 
             }
@@ -53,11 +53,11 @@ namespace SpaceShooter
             if (mainTarget != null)
                 AttackTarget(mainTarget.transform);
             else
-            { 
-                if(secondTarget != null)
+            {
+                if (secondTarget != null)
                     AttackTarget(secondTarget.transform);
-            } 
-              
+            }
+
         }
 
         /// <summary>
@@ -69,9 +69,9 @@ namespace SpaceShooter
             int index = 0;
             for (int i = 0; i < colliders.Length; i++)
             {
-                index ++;
-               
-                 SpaceShip  targetSelect = colliders[i].transform.root.GetComponent<SpaceShip>();
+                index++;
+
+                SpaceShip targetSelect = colliders[i].transform.root.GetComponent<SpaceShip>();
                 if (targetSelect != null && targetSelect.Nicname != "Player")
                 {
                     mainTarget = targetSelect;
@@ -83,9 +83,9 @@ namespace SpaceShooter
                     if (targetSelectSecond != null && targetSelectSecond.Nicname != "Player")
                     {
                         secondTarget = targetSelectSecond;
-                    }                   
-                }                         
-            }           
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -97,23 +97,25 @@ namespace SpaceShooter
             Vector2 directTarget = (Vector2)target.transform.position - (Vector2)transform.position;
             directTarget = directTarget.normalized;
 
-            float rotateAmount = Vector3.Cross (directTarget, transform.up).z;
+            float rotateAmount = Vector3.Cross(directTarget, transform.up).z;
 
             Rigidbody2D rb = GetComponent<Rigidbody2D>();
             rb.angularVelocity = -rotateAmount * rotateSpeed;
 
             rb.velocity = transform.up * speed;
         }
+    }
+}
         /// <summary>
         /// Для отображения радуса поиска коллайдеров. 
         /// </summary>
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere (transform.position, m_RadisuTarget);
         }      
     }
-#endif
-}
+#endif*/
+
 

@@ -40,7 +40,7 @@ Transform:
   - {fileID: 6487239817244612383}
   - {fileID: 3204797844823837754}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &3127199632162376604
 Rigidbody2D:
@@ -87,6 +87,7 @@ MonoBehaviour:
   ChangeHp:
     m_PersistentCalls:
       m_Calls: []
+  IsDestroy: 0
   m_TeamId: 1
   m_EventOnDeath:
     m_PersistentCalls:
@@ -242,7 +243,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.413
+  m_Volume: 0.218
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -386,7 +387,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.413
+  m_Volume: 0.184
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -530,7 +531,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.413
+  m_Volume: 0.296
   m_Pitch: 1
   Loop: 0
   Mute: 0
